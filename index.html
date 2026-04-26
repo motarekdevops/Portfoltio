@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohamed | DevOps Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* Instant fallback while fonts load */
+  @font-face {
+    font-family: 'Syne';
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Space Mono';
+    font-display: swap;
+  }
+</style>
 <style>
   :root {
     --bg: #0a0a0f;
@@ -17,9 +29,9 @@
     --accent3: #ff6b35;
     --text: #e8e8f0;
     --muted: #6b6b80;
-    --mono: 'Space Mono', monospace;
-    --display: 'Syne', sans-serif;
-    --body: 'DM Sans', sans-serif;
+    --mono: 'Space Mono', 'Courier New', monospace;
+    --display: 'Syne', 'Segoe UI', system-ui, sans-serif;
+    --body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -184,9 +196,9 @@
 
   .hero h1 {
     font-family: var(--display);
-    font-size: clamp(56px, 8vw, 96px);
+    font-size: clamp(48px, 6vw, 80px);
     font-weight: 800;
-    line-height: 0.95;
+    line-height: 0.98;
     letter-spacing: -2px;
     margin-bottom: 8px;
   }
